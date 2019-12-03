@@ -1,0 +1,86 @@
+
+
+
+html, body {
+
+   color:black;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Info */
+
+@-webkit-keyframes show-info {
+    0% { -webkit-transform: rotateY(120deg); }
+    100% { -webkit-transform: rotateY(0deg); }
+}
+
+@-moz-keyframes show-info {
+    0% { -moz-transform: rotateY(120deg); }
+    100% { -moz-transform: rotateY(0deg); }
+}
+
+@-ms-keyframes show-info {
+    0% { -ms-transform: rotateY(120deg); }
+    100% { -ms-transform: rotateY(0deg); }
+}
+
+@-o-keyframes show-info {
+    0% { -o-transform: rotateY(180deg); }
+    100% { -o-transform: rotateY(0deg); }
+}
+
+@keyframes show-info {
+    0% { transform: rotateY(120deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+.info {
+
+    -webkit-transition: all 180ms ease-out;
+    -moz-transition: all 180ms ease-out;
+    -ms-transition: all 180ms ease-out;
+    -o-transition: all 180ms ease-out;
+    transition: all 180ms ease-out;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform: perspective(800);
+    -moz-transform: perspective(300);
+    -ms-transform: perspective(800);
+    -o-transform: perspective(800);
+    transform: perspective(300);
+
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+ 
+    opacity: 0.8;
+    
+    /* width: 240px;
+    left: 600px;
+    top: 400px; */
+      background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
